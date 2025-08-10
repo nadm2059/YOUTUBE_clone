@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.scss';
 
 // YouTube Data API key for authentication
-const API_KEY = 'AIzaSyDSDL6zn5ax_H5t21_6aW-MbE_MHFzXwG0';
+const API_KEY = //replace with your api key;
 
 // TypeScript interface describing the shape of a video snippet object
 interface VideoSnippet {
