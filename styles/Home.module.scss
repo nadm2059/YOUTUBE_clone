@@ -1,0 +1,227 @@
+.container {
+  // Set the font family for the whole container
+  font-family: Arial, sans-serif;
+  // Light background color for the page
+  background-color: #f9f9f9;
+  // Ensure container fills at least full viewport height
+  min-height: 100vh;
+}
+
+.header {
+  // Padding inside header
+  padding: 1rem;
+  // Dark background for header
+  background-color: #202020;
+  // White text color
+  color: white;
+  // Use flexbox for horizontal layout
+  display: flex;
+  // Vertically center items inside header
+  align-items: center;
+  // Horizontal gap between child elements
+  gap: 1rem;
+}
+
+.logo {
+  // Large font size for logo text
+  font-size: 1.5rem;
+  // Bold font weight for logo
+  font-weight: bold;
+}
+
+.searchForm {
+  // Allow form to expand and fill available space
+  flex-grow: 1;
+  // Use flexbox layout inside form
+  display: flex;
+}
+
+.searchInput {
+  // Allow input to expand and fill form space
+  flex-grow: 1;
+  // Font size for input text
+  font-size: 1rem;
+  // Padding inside input box
+  padding: 0.5rem;
+  // Remove default input border
+  border: none;
+  // Rounded corners on left side only
+  border-radius: 4px 0 0 4px;
+}
+
+.searchInput:focus {
+  // Remove default focus outline
+  outline: none;
+  // Add red glowing shadow on focus
+  box-shadow: 0 0 5px #ff0000;
+}
+
+.searchButton {
+  // Horizontal padding inside button
+  padding: 0 1rem;
+  // Remove button border
+  border: none;
+  // Bright red background color
+  background-color: #e62117;
+  // White text color
+  color: white;
+  // Bold font for button text
+  font-weight: bold;
+  // Change cursor to pointer on hover
+  cursor: pointer;
+  // Rounded corners on right side only
+  border-radius: 0 4px 4px 0;
+  // Smooth transition effect on background color
+  transition: background-color 0.2s ease;
+}
+
+.searchButton:hover {
+  // Darker red background on hover
+  background-color: #b91f14;
+}
+
+.main {
+  // Padding inside main content area
+  padding: 1rem;
+  // Maximum width for main content
+  max-width: 1200px;
+  // Center main content horizontally
+  margin: 0 auto;
+}
+
+.loading,
+.error {
+  // Slightly larger font size for messages
+  font-size: 1.2rem;
+  // Vertical margin spacing
+  margin: 1rem 0;
+}
+
+.error {
+  // Red text color for errors
+  color: red;
+}
+
+.videoGrid {
+  // Use CSS grid layout for video cards
+  display: grid;
+  // Responsive columns: auto fit with min width 280px
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  // Gap between grid items
+  gap: 1rem;
+}
+
+.videoCard {
+  // Pointer cursor to indicate clickable card
+  cursor: pointer;
+  // Light gray border around card
+  border: 1px solid #ddd;
+  // Rounded corners on cards
+  border-radius: 8px;
+  // Prevent child overflow beyond card edges
+  overflow: hidden;
+  // Subtle drop shadow for card depth
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  // White background for card content
+  background-color: white;
+  // Smooth scale transform transition on hover
+  transition: transform 0.15s ease-in-out;
+}
+
+.videoCard:hover {
+  // Slightly enlarge card when hovered
+  transform: scale(1.03);
+}
+
+.thumbnail {
+  // Full width thumbnail image
+  width: 100%;
+  // Make image a block element
+  display: block;
+}
+
+.videoInfo {
+  // Flexbox container for video info section
+  display: flex;
+  // Padding inside info section
+  padding: 0.5rem;
+  // Gap between avatar and text info
+  gap: 0.5rem;
+}
+
+.channelAvatar {
+  // Fixed width for channel avatar image
+  width: 36px;
+  // Fixed height to maintain aspect ratio
+  height: 36px;
+  // Make avatar a circle
+  border-radius: 50%;
+  // Prevent shrinking of avatar in flex container
+  flex-shrink: 0;
+}
+
+.textInfo {
+  // Allow text container to grow and fill space
+  flex-grow: 1;
+  // Hide overflow text to maintain layout
+  overflow: hidden;
+}
+
+.videoTitle {
+  // Remove default margin
+  margin: 0;
+  // Bold font weight for title
+  font-weight: bold;
+  // Font size for title text
+  font-size: 1rem;
+  // Set line height for readability
+  line-height: 1.2;
+  // Hide overflow text with ellipsis
+  overflow: hidden;
+  // Add ellipsis for overflow text
+  text-overflow: ellipsis;
+  // Prevent text from wrapping to next line
+  white-space: nowrap;
+}
+
+.videoChannel {
+  // Remove default margin
+  margin: 0;
+  // Medium gray color for channel name
+  color: #555;
+  // Slightly smaller font size than title
+  font-size: 0.9rem;
+  // Hide overflow text with ellipsis
+  overflow: hidden;
+  // Add ellipsis for overflow text
+  text-overflow: ellipsis;
+  // Prevent wrapping to new lines
+  white-space: nowrap;
+}
+
+.videoStats {
+  // Remove default margin
+  margin: 0;
+  // Light gray color for stats text
+  color: #888;
+  // Smaller font size for stats
+  font-size: 0.8rem;
+}
+
+.playerContainer {
+  // Top margin above player container
+  margin-top: 2rem;
+  // Center text inside container (for iframe)
+  text-align: center;
+}
+
+.playerIframe {
+  // Responsive max width of player iframe
+  max-width: 100%;
+  // Remove border around iframe
+  border: none;
+  // Rounded corners for player iframe
+  border-radius: 8px;
+  // Subtle drop shadow for player iframe
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
