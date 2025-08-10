@@ -1,5 +1,5 @@
 // Your YouTube Data API key for authentication
-const API_KEY = 'AIzaSyDSDL6zn5ax_H5t21_6aW-MbE_MHFzXwG0';
+const API_KEY = //replace with your api key;
 
 // Get the HTML element with id 'videoGrid' where videos will be displayed
 const grid = document.getElementById('videoGrid');
