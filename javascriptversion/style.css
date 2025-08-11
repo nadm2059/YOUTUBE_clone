@@ -1,0 +1,125 @@
+body {
+  margin: 0; /* Remove default margin from body */
+  font-family: "Roboto", Arial, sans-serif; /* Set font family */
+  background-color: #181818; /* Dark background color */
+  color: #fff; /* White text color */
+}
+
+/* Header */
+header {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center items */
+  background-color: #202020; /* Dark gray background */
+  padding: 8px 16px; /* Padding inside header */
+  position: sticky; /* Stick to top when scrolling */
+  top: 0; /* Position at top */
+  z-index: 100; /* Layer above other content */
+}
+
+.logo {
+  font-size: 1.5rem; /* Large font size */
+  font-weight: bold; /* Bold text */
+  color: #ff0000; /* Bright red color */
+  margin-right: 20px; /* Space to the right */
+}
+
+header input {
+  flex: 1; /* Take up all remaining space */
+  padding: 8px 12px; /* Padding inside input */
+  font-size: 1rem; /* Font size */
+  border: 1px solid #303030; /* Dark border */
+  background-color: #121212; /* Very dark background */
+  color: #fff; /* White text */
+  outline: none; /* Remove default outline */
+  border-radius: 2px 0 0 2px; /* Rounded left corners */
+}
+
+header button {
+  padding: 8px 16px; /* Padding inside button */
+  border: none; /* Remove default border */
+  background-color: #323232; /* Dark gray background */
+  color: #fff; /* White text */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 0 2px 2px 0; /* Rounded right corners */
+}
+
+header button:hover {
+  background-color: #3f3f3f; /* Slightly lighter on hover */
+}
+
+/* Grid */
+#videoGrid {
+  display: grid; /* Use CSS grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsive columns with min width */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around grid */
+}
+
+/* Card */
+.video-card {
+  background-color: transparent; /* Transparent background */
+  cursor: pointer; /* Pointer cursor for clickable cards */
+}
+
+.thumbnail {
+  width: 100%; /* Full width */
+  aspect-ratio: 16 / 9; /* Maintain 16:9 ratio */
+  object-fit: cover; /* Cover the box without distortion */
+  border-radius: 8px; /* Rounded corners */
+}
+.video-card:hover {
+  transform: translateY(-5px); /* Lift card up slightly on hover */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6); /* Dark shadow on hover */
+}
+.thumbnail img {
+  width: 100%; /* Full width for image inside thumbnail */
+  display: block; /* Remove inline spacing */
+}
+
+.video-info {
+  display: flex; /* Flex container for video info */
+  margin-top: 8px; /* Space above info */
+}
+
+.channel-avatar {
+  width: 36px; /* Fixed width */
+  height: 36px; /* Fixed height */
+  border-radius: 50%; /* Make avatar circular */
+  margin-right: 10px; /* Space to the right */
+  object-fit: cover; /* Cover the avatar box */
+}
+
+.text-info {
+  flex: 1; /* Take all remaining space */
+}
+
+.video-title {
+  font-size: 0.95rem; /* Slightly smaller than normal */
+  font-weight: 500; /* Medium weight */
+  margin: 0 0 4px; /* Bottom margin */
+  color: #fff; /* White text */
+}
+
+.video-channel {
+  font-size: 0.85rem; /* Smaller font */
+  color: #aaa; /* Light gray text */
+  margin: 0 0 2px; /* Bottom margin */
+}
+
+.video-stats {
+  font-size: 0.8rem; /* Small font */
+  color: #aaa; /* Light gray text */
+}
+
+/* Player */
+#playerContainer {
+  padding: 20px; /* Padding around player */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the player horizontally */
+}
+
+iframe {
+  border: none; /* Remove iframe border */
+  border-radius: 8px; /* Rounded corners */
+}
