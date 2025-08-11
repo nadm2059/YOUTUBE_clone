@@ -1,6 +1,4 @@
-Here's a polished and well-structured **README.md** version for your project with clear sections, consistent formatting, and improved readability:
 
-````markdown
 # YouTube Search App — 4 Versions: TypeScript, JavaScript, Flask, and FastAPI
 
 ---
