@@ -1,4 +1,4 @@
-# 5 VERSIONS WITH TYPESCRIPT, JAVASCRIPT, FLASK AND FASTAPI
+# 4 VERSIONS WITH TYPESCRIPT, JAVASCRIPT, FLASK AND FASTAPI
 ## TO RUN TS VERSION
 ### npm install AND npm run dev: code files in pages and styles folder
 ## TO RUN JS VERSION: Files include index.html, style.css and script.js
