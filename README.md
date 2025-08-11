@@ -23,13 +23,13 @@ style.css
 script.js
 
 ````
-Put your `main.py` in `fastapi-backend/` and your frontend files in `/frontend`.
+Put your `main.py` in `fastapi/` and your frontend files in `/frontend`.
 
 ---
 
 #### Install dependencies
 
-Open a terminal in `fastapi-backend/` and run:
+Open a terminal in `fastapi/` and run:
 ```bash
 pip install fastapi uvicorn httpx
 ````
