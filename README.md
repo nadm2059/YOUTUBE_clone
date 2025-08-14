@@ -169,11 +169,3 @@ python app.py
 
 ---
 
-Feel free to contribute or ask questions!
-
-```
-
----
-
-If you want, I can also help you generate a full `requirements.txt` or example environment variables setup for your backend versions. Just ask!
-```
